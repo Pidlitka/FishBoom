@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик — FishBoom</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-fish"></i><span>FishBoom</span></a>
+            </div>
+            <div class="burger" id="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <a href="index.html" class="nav-link">Про нас</a>
+                <a href="magaz.html" class="nav-link">Магазин</a>
+                <a href="kontakti.html" class="nav-link">Контакти</a>
+            </nav>
+            <div class="user-actions">
+                <a href="koshik.html" class="cart-icon active">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">1</span>
+                </a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="page-title">Ваш кошик</h1>
+
+            <div class="cart-container">
+                <!-- Товари -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="img/foto-1661-600x600.jpg" alt="Лосось філе охолоджене">
+                        </div>
+                        <div class="item-details">
+                            <h3>Лосось філе охолоджене</h3>
+                            <p class="item-price">474 грн / кг</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn decrease">-</button>
+                            <span class="qty">1</span>
+                            <button class="qty-btn increase">+</button>
+                        </div>
+                        <div class="item-subtotal">474 грн</div>
+                        <button class="btn-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <div class="delivery-options">
+                        <h3>Доставка</h3>
+                        <label class="radio-label">
+                            <input type="radio" name="delivery" value="delivery" checked>
+                            <span>Доставка по м. Сміла — 150 грн</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="delivery" value="pickup">
+                            <span>Самовивіз — безкоштовно</span>
+                        </label>
+                    </div>
+
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Товари:</span>
+                            <span>474 грн</span>
+                        </div>
+                        <div class="summary-row delivery-cost">
+                            <span>Доставка:</span>
+                            <span class="delivery-price">150 грн</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>До сплати:</span>
+                            <span class="total-price">624 грн</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-checkout"><a href="order.html">Оформити замовлення</a></button>
+                    <a href="order.css"></a>
+                    <p class="payment-notice">Оплата при отриманні</p>
+
+                    <button class="btn-clear-cart">Очистити кошик</button>
+                </div>
+            </div>
+            <!-- 
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Ваш кошик порожній</h2>
+                <a href="magaz.html" class="btn-primary">Перейти до покупок</a>
+            </div>
+            -->
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <nav class="footer-nav">
+                    <a href="index.html">Про нас</a>
+                    <a href="magaz.html">Магазин</a>
+                    <a href="kontakti.html">Контакти</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">FishBoom</h2>
+                    <p class="copyright">© 2026 FishBoom. Всі права захищено.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

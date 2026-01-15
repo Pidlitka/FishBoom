@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення замовлення — FishBoom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-fish"></i><span>FishBoom</span></a>
+            </div>
+            <div class="burger" id="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <a href="index.html" class="nav-link">Про нас</a>
+                <a href="magaz.html" class="nav-link">Магазин</a>
+                <a href="kontakti.html" class="nav-link">Контакти</a>
+            </nav>
+            <div class="user-actions">
+                <a href="koshik.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">1</span>
+                </a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-page">
+        <div class="container">
+            <h1 class="page-title">Оформлення замовлення</h1>
+
+            <div class="checkout-layout">
+                <div class="checkout-form-section">
+                    <form class="checkout-form" id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Ім'я та прізвище <span class="required">*</span></label>
+                            <input type="text" id="name" placeholder="Іван Петренко" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон <span class="required">*</span></label>
+                            <input type="tel" id="phone" placeholder="+380 (XX) XXX-XX-XX" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email (необов'язково)</label>
+                            <input type="email" id="email" placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Адреса доставки <span class="required">*</span></label>
+                            <input type="text" id="address" placeholder="вул. Незалежності, 36, кв. 12" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deliveryTime">Бажаний час доставки</label>
+                            <select id="deliveryTime">
+                                <option value="">Не важливо</option>
+                                <option value="morning">Ранок (9:00–12:00)</option>
+                                <option value="day">День (12:00–15:00)</option>
+                                <option value="evening">Вечір (15:00–20:00)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment">Коментар до замовлення</label>
+                            <textarea id="comment" rows="4" placeholder="Наприклад: дзвонити за 15 хв, залишити біля дверей..."></textarea>
+                        </div>
+
+                        <div class="form-group payment-method">
+                            <label>Спосіб оплати</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="payment" value="cash" checked>
+                                    <span>Оплата при отриманні</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="payment" value="card">
+                                    <span>Оплата карткою онлайн</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-summary">
+                    <div class="summary-sticky">
+                        <h3>Ваше замовлення</h3>
+
+                        <div class="summary-items">
+                            <div class="summary-item">
+                                <img src="img/foto-1701-600x600.jpg" alt="Лосось філе охолоджене">
+                                <div class="summary-item-info">
+                                    <h4>Лосось філе охолоджене</h4>
+                                    <span>1 кг × 474 грн</span>
+                                </div>
+                                <span class="summary-item-price">474 грн</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-totals">
+                            <div class="total-line">
+                                <span>Сума товарів:</span>
+                                <span>474 грн</span>
+                            </div>
+                            <div class="total-line delivery-line">
+                                <span>Доставка:</span>
+                                <span class="delivery-cost">150 грн</span>
+                            </div>
+                            <div class="total-line grand-total">
+                                <span>До сплати:</span>
+                                <span class="grand-total-price">624 грн</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" form="orderForm" class="btn-confirm-order">
+                            Підтвердити замовлення
+                        </button>
+
+                        <p class="legal-text">
+                            Натискаючи «Підтвердити», ви погоджуєтесь з <a href="#">політикою конфіденційності</a> та даєте згоду на обробку персональних даних.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <nav class="footer-nav">
+                    <a href="index.html">Про нас</a>
+                    <a href="magaz.html">Магазин</a>
+                    <a href="kontakti.html">Контакти</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">FishBoom</h2>
+                    <p class="copyright">© 2026 FishBoom. Всі права захищено.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

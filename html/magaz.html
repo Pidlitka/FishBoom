@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин — FishBoom</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-fish"></i>
+                    <span>FishBoom</span>
+                </a>
+            </div>
+
+            <div class="burger" id="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav" id="nav-menu">
+                <a href="index.html" class="nav-link">Про нас</a>
+                <a href="magaz.html" class="nav-link active">Магазин</a>
+                <a href="kontakti.html" class="nav-link">Контакти</a>
+            </nav>
+
+            <div class="user-actions">
+                <a href="koshik.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="shop-page">
+        <div class="container">
+            <h1 class="page-title">Магазин</h1>
+
+            <div class="shop-toolbar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Пошук риби, морепродуктів..." id="searchInput">
+                </div>
+
+                <div class="filter-sort">
+                    <div class="sort-select">
+                        <select id="sortSelect">
+                            <option value="newest">Спочатку нові</option>
+                            <option value="price-asc">Ціна: за зростанням</option>
+                            <option value="price-desc">Ціна: за спаданням</option>
+                            <option value="name-asc">Назва: А → Я</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-grid" id="productGrid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/foto-12-1-600x600.jpg" alt="Лосось філе охолоджене">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Лосось філе охолоджене</h3>
+                        <p class="price">980 грн/кг</p>
+                        <button class="btn-add-to-cart">До кошика</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/foto-711-600x600.jpg" alt="Креветка тигрова">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Креветка тигрова 16-20 без голови</h3>
+                        <p class="price">430 грн/кг</p>
+                        <button class="btn-add-to-cart">До кошика</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/foto-151-1-600x600.jpg" alt="Скумбрія">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Скумбрія свіжоморожена без голови</h3>
+                        <p class="price">275 грн/кг</p>
+                        <button class="btn-add-to-cart">До кошика</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/foto-155-1-600x600.jpg" alt="Сайда філе">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Сайда філе свіжоморожене без шкіри</h3>
+                        <p class="price">474 грн/кг</p>
+                        <button class="btn-add-to-cart">До кошика</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">→</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <nav class="footer-nav">
+                    <a href="index.html">Про нас</a>
+                    <a href="magaz.html">Магазин</a>
+                    <a href="kontakti.html">Контакти</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">FishBoom</h2>
+                    <p class="copyright">© 2026 FishBoom. Всі права захищено.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
